@@ -31,6 +31,8 @@ public class MinIOFileStorageService implements FileStorageService {
     @Autowired
     private MinIOConfigProperties minIOConfigProperties;
 
+    //以下语句为实例化测试用
+
     private final static String separator = "/";
 
     /**

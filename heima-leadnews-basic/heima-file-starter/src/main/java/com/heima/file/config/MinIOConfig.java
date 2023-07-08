@@ -8,10 +8,12 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 
 
 @Data
 @Configuration
+//@Component//自己加的
 @EnableConfigurationProperties({MinIOConfigProperties.class})
 //当引入FileStorageService接口时
 @ConditionalOnClass(FileStorageService.class)
@@ -25,7 +27,15 @@ public class MinIOConfig {
         return MinioClient
                 .builder()
                 .credentials(minIOConfigProperties.getAccessKey(), minIOConfigProperties.getSecretKey())
-                .endpoint(minIOConfigProperties.getEndpoint())
+                .endpoint(minIOConfigProperties.getEndpoint())//这句注销有啥问题不
+//                .endpoint("leadnews")//测试用
                 .build();
+//                return MinioClient
+//                .builder()
+//                .credentials("minio", "minio123")
+//                .endpoint("http://192.168.200.130:9000")//这句注销有啥问题不
+//                .build();
+
+
     }
 }

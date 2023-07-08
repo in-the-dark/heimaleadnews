@@ -20,9 +20,9 @@ import java.io.FileNotFoundException;
 @RunWith(SpringRunner.class)
 public class MinIOTest {
 
-    @Autowired
 
 
+//
 //    public static void main(String[] args) {
 //
 //        FileInputStream fileInputStream = null;
@@ -41,6 +41,7 @@ public class MinIOTest {
 //                    .build();
 //            minioClient.putObject(putObjectArgs);
 //
+//            //访问路劲
 //            System.out.println("http://192.168.200.130:9000/leadnews/list.html");
 //
 //        } catch (Exception ex) {
@@ -48,13 +49,13 @@ public class MinIOTest {
 //        }
 //    }
 
-
+    @Autowired
     private FileStorageService fileStorageService;
     @Test
-    public void testUpdateImgFile() {
+    public void test() {
         try {
             FileInputStream fileInputStream = new FileInputStream("G:\\list.html");
-            String filePath = fileStorageService.uploadImgFile("", "list.html", fileInputStream);
+            String filePath = fileStorageService.uploadHtmlFile("", "list.html", fileInputStream);
             System.out.println(filePath);
         } catch (FileNotFoundException e) {
             e.printStackTrace();

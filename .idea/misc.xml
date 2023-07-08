@@ -7,6 +7,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/heima-leadnews-test/pom.xml" />
         <option value="$PROJECT_DIR$/heima-leadnews-basic/pom.xml" />
+        <option value="$PROJECT_DIR$/heima-leadnews-service/pom.xml" />
+        <option value="$PROJECT_DIR$/heima-leadnews-gateway/pom.xml" />
       </list>
     </option>
   </component>
