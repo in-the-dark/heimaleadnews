@@ -38,6 +38,9 @@ public class AuthorizeFilter implements Ordered, GlobalFilter {
             response.setStatusCode(HttpStatus.UNAUTHORIZED);
             return response.setComplete();
         }
+//        else{
+//            return chain.filter(exchange);
+//        }
 
         //5.判断token是否有效
         try {
