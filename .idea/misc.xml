@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/heima-leadnews-basic/pom.xml" />
         <option value="$PROJECT_DIR$/heima-leadnews-service/pom.xml" />
         <option value="$PROJECT_DIR$/heima-leadnews-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/heima-leadnews-test/tess4j-demo/pom.xml" />
       </list>
     </option>
   </component>
