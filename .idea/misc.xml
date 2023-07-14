@@ -12,6 +12,9 @@
         <option value="$PROJECT_DIR$/heima-leadnews-test/tess4j-demo/pom.xml" />
         <option value="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-schedule/pom.xml" />
         <option value="$PROJECT_DIR$/heima-leadnews-test/kafka-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/heima-leadnews-test/es-init/pom.xml" />
+        <option value="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-search/pom.xml" />
+        <option value="$PROJECT_DIR$/heima-leadnews-test/mongo-demo/pom.xml" />
       </list>
     </option>
   </component>
