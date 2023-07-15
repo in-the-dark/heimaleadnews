@@ -11,6 +11,7 @@ import org.springframework.scheduling.annotation.EnableAsync;
 public class SearchApplication {
 
     public static void main(String[] args) {
+
         SpringApplication.run(SearchApplication.class,args);
     }
 }
