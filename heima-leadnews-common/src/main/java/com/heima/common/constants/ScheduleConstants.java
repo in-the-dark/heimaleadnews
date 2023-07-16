@@ -1,5 +1,9 @@
 package com.heima.common.constants;
 
+/**
+ *关于资源调度的一些方案设计
+ */
+
 public class ScheduleConstants {
 
     //task状态

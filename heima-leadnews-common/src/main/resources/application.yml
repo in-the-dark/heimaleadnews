@@ -1,5 +1,6 @@
 #全局端口定义server:
 # 全局字符集设置
+#不影响，程序不报错，不用理
 spring:
   http:
     encoding:

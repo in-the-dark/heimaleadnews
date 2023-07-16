@@ -28,7 +28,6 @@ public class MinIOConfig {
                 .builder()
                 .credentials(minIOConfigProperties.getAccessKey(), minIOConfigProperties.getSecretKey())
                 .endpoint(minIOConfigProperties.getEndpoint())//这句注销有啥问题不
-//                .endpoint("leadnews")//测试用
                 .build();
 //                return MinioClient
 //                .builder()
