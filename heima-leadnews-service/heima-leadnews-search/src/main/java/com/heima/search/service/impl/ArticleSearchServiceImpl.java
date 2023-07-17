@@ -99,7 +99,7 @@ public class ArticleSearchServiceImpl implements ArticleSearchService {
 
         List<Map> list = new ArrayList<>();
 
-        SearchHit[] hits = searchResponse.getHits().getHits();
+        SearchHit[] hits = searchResponse.getHits().getHits();//这里调用了两个getHits，有点奇怪
         for (SearchHit hit : hits) {
             String json = hit.getSourceAsString();
             Map map = JSON.parseObject(json, Map.class);

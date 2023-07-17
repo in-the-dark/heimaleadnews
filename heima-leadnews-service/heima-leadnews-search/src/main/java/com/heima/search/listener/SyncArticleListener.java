@@ -16,6 +16,9 @@ import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 
+/**
+ * 监听器，每当新增一篇文章，就解析关键词并导入到ES索引库中
+ */
 @Component
 @Slf4j
 public class SyncArticleListener {

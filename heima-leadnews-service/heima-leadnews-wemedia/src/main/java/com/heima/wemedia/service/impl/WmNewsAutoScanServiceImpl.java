@@ -53,7 +53,7 @@ public class WmNewsAutoScanServiceImpl implements WmNewsAutoScanService {
     @Async  //标明当前方法是一个异步方法
     public void autoScanWmNews(Integer id) {
 
-//        int a = 1/0;
+//        int a = 1/0;//只是个异步调用的测试
 
         //1.查询自媒体文章
         WmNews wmNews = wmNewsMapper.selectById(id);
@@ -73,7 +73,7 @@ public class WmNewsAutoScanServiceImpl implements WmNewsAutoScanService {
 //            boolean isTextScan = handleTextScan((String) textAndImages.get("content"), wmNews);
 //            if (!isTextScan) return;
 //
-            //3.审核图片  阿里云接口
+            //3.审核图片  对用OCR识别图片内容并进行敏感词过滤
             boolean isImageScan = handleImageScan((List<String>) textAndImages.get("images"), wmNews);
             if (!isImageScan) return;
 
@@ -248,6 +248,9 @@ public class WmNewsAutoScanServiceImpl implements WmNewsAutoScanService {
         return flag;
     }
 
+    /**
+     * 这一块没用到
+     */
     @Autowired
     private GreenTextScan greenTextScan;
 

@@ -11,6 +11,9 @@ import org.springframework.stereotype.Component;
 
 import java.util.Map;
 
+/**
+ * 文章的上线和下线主题，监听器，监听文章上下架的同步与异步
+ */
 @Component
 @Slf4j
 public class ArticleIsDownListener {
@@ -21,7 +24,7 @@ public class ArticleIsDownListener {
     @KafkaListener(topics = WmNewsMessageConstants.WM_NEWS_UP_OR_DOWN_TOPIC)
     public void onMessage(String message){
         if(StringUtils.isNotBlank(message)){
-            Map map = JSON.parseObject(message, Map.class);
+            Map map = JSON.parseObject(message, Map.class);//这个函数获得的是什么，没弄懂
             apArticleConfigService.updateByMap(map);
         }
     }

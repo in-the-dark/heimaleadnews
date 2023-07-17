@@ -74,7 +74,6 @@ public class TaskServiceImpl implements TaskService {
             cacheService.zAdd(ScheduleConstants.FUTURE + key, JSON.toJSONString(task), task.getExecuteTime());
         }
 
-
     }
 
     @Autowired
@@ -249,8 +248,6 @@ public class TaskServiceImpl implements TaskService {
             }
         }
 
-
-
     }
 
     /**
@@ -267,7 +264,6 @@ public class TaskServiceImpl implements TaskService {
         Calendar calendar = Calendar.getInstance();
         calendar.add(Calendar.MINUTE, 5);
         List<Taskinfo> taskinfoList = taskinfoMapper.selectList(Wrappers.<Taskinfo>lambdaQuery().lt(Taskinfo::getExecuteTime, calendar.getTime()));
-
         //把任务添加到redis
         if(taskinfoList!=null && taskinfoList.size()>0){
             for (Taskinfo taskinfo : taskinfoList) {
@@ -279,7 +275,6 @@ public class TaskServiceImpl implements TaskService {
         }
 
         log.info("数据库的任务同步到了redis");
-
     }
 
     public void clearCache(){

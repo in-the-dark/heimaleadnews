@@ -10,6 +10,10 @@ import org.springframework.stereotype.Component;
 
 import java.awt.image.BufferedImage;
 
+
+/**
+ * OCR识别包，将图片中的文字识别出来
+ */
 @Getter
 @Setter
 @Component

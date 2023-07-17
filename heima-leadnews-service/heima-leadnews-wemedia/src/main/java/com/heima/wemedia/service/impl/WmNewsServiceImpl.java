@@ -51,7 +51,7 @@ public class WmNewsServiceImpl extends ServiceImpl<WmNewsMapper, WmNews> impleme
     public ResponseResult findList(WmNewsPageReqDto dto) {
         //1.检查参数
         //分页检查
-        dto.checkParam();
+        dto.checkParam();//自定义的一个方法，用来检查参数是否为空
 
         //2.分页条件查询
         IPage page = new Page(dto.getPage(), dto.getSize());
@@ -88,7 +88,6 @@ public class WmNewsServiceImpl extends ServiceImpl<WmNewsMapper, WmNews> impleme
         //3.结果返回
         ResponseResult responseResult = new PageResponseResult(dto.getPage(), dto.getSize(), (int) page.getTotal());
         responseResult.setData(page.getRecords());
-
 
         return responseResult;
     }

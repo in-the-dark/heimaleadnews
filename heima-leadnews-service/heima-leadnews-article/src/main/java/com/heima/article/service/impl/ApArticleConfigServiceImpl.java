@@ -16,7 +16,7 @@ import java.util.Map;
 @Transactional
 public class ApArticleConfigServiceImpl extends ServiceImpl<ApArticleConfigMapper, ApArticleConfig> implements ApArticleConfigService {
     /**
-     * 修改文章
+     * 修改文章上下架
      * @param map
      */
     @Override

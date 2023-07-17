@@ -134,13 +134,16 @@ public class ResponseResult<T> implements Serializable {
     }
 
 
+    /**
+     * 以下是一个测试类，后期不用可以注释掉
+     */
     public static void main(String[] args) {
         //前置
         /*AppHttpCodeEnum success = AppHttpCodeEnum.SUCCESS;
         System.out.println(success.getCode());
         System.out.println(success.getErrorMessage());*/
 
-        //查询一个对象
+//        //查询一个对象
 //        Map map = new HashMap();
 //        map.put("name","zhangsan");
 //        map.put("age",18);
@@ -157,13 +160,14 @@ public class ResponseResult<T> implements Serializable {
         /*ResponseResult result = ResponseResult.errorResult(AppHttpCodeEnum.NEED_LOGIN,"自定义提示信息");
         System.out.println(JSON.toJSONString(result));*/
 
+
         //查询分页信息
-//        PageResponseResult responseResult = new PageResponseResult(1,5,50);
-//        List list = new ArrayList();
-//        list.add("itcast");
-//        list.add("itheima");
-//        responseResult.setData(list);
-//        System.out.println(JSON.toJSONString(responseResult));
+        PageResponseResult responseResult = new PageResponseResult(1,5,50);
+        List list = new ArrayList();
+        list.add("itcast");
+        list.add("itheima");
+        responseResult.setData(list);//这里的多态语句指的学习
+        System.out.println(JSON.toJSONString(responseResult));
 
     }
 

@@ -17,6 +17,7 @@ public class PageResponseResult extends ResponseResult implements Serializable {
 
     }
 
+//用一个getter和setter注解不就能解决问题了吗
 
     public int getCurrentPage() {
         return currentPage;

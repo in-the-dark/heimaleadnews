@@ -22,5 +22,5 @@ public class WmChannelServiceImpl extends ServiceImpl<WmChannelMapper, WmChannel
     @Override
     public ResponseResult findAll() {
         return ResponseResult.okResult(list());
-    }
+    }//list()方法即查询所有数据，为Iservice的方法
 }

@@ -64,7 +64,7 @@ public class CacheService extends CachingConfigurerSupport {
     }
 
     /**
-     * 设置过期时间
+     * 设置过期时间（为一个时间周期）
      *
      * @param key
      * @param timeout
@@ -76,7 +76,7 @@ public class CacheService extends CachingConfigurerSupport {
     }
 
     /**
-     * 设置过期时间
+     * 设置过期日期
      *
      * @param key
      * @param date

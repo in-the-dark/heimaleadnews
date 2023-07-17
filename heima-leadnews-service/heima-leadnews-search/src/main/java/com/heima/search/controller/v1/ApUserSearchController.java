@@ -26,4 +26,5 @@ public class ApUserSearchController {
     public ResponseResult delUserSearch(@RequestBody HistorySearchDto dto){
         return apUserSearchService.delUserSearch(dto);
     }
+
 }

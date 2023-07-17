@@ -7,7 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class PageRequestDto {
 
-    protected Integer size;
+    protected Integer size;//注意，访问修饰符是protected的而不是private
     protected Integer page;
 
     public void checkParam() {

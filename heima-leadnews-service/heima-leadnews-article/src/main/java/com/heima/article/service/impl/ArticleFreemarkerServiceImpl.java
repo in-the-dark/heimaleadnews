@@ -89,7 +89,7 @@ public class ArticleFreemarkerServiceImpl implements ArticleFreemarkerService {
     private KafkaTemplate<String,String> kafkaTemplate;
 
     /**
-     * 送消息，创建索引
+     * 发送消息，创建索引
      * @param apArticle
      * @param content
      * @param path

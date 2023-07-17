@@ -27,6 +27,10 @@ public class ArticleApplication {
     }
 
 
+    /**
+     * 配置分页插件的一种写法
+     * @return
+     */
     @Bean
     public MybatisPlusInterceptor mybatisPlusInterceptor() {
         MybatisPlusInterceptor interceptor = new MybatisPlusInterceptor();
